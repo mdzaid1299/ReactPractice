@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Counter from "./Components/Counter";
 import Home from "./Components/Home";
+import Toggle from "./Components/Toggle";
+import ValidatedForm from "./Components/ValidatedForm";
 function Router() {
   const routes = createBrowserRouter([
     {
@@ -11,10 +13,14 @@ function Router() {
       path: "/",
       element: <Home />,
     },
-    // {
-    //   path: "/compass",
-    //   element: <Compass />,
-    // },
+    {
+      path: "/toggle",
+      element: <Toggle />,
+    },
+    {
+      path: "/form",
+      element: <ValidatedForm />,
+    },
     // {
     //   path: "/speedtest",
     //   element: <SpeedTest />,
